@@ -5,7 +5,7 @@ import time
 # !!! IMPORTANT: Replace 'COM4' with your actual port name !!!
 # !!! Ensure the baud rate matches the Arduino sketch (e.g., 9600) !!!
 
-ser = serial.Serial('COM6',115200, timeout=1) 
+ser = serial.Serial('/dev/ttyUSB0',115200, timeout=1) 
 time.sleep(2) # Give the Arduino time to reset after the port is opened
 
 
